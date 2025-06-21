@@ -82,15 +82,15 @@ const Navbar = () => {
           >
             <div className="space-y-4 text-center">
               {/* Courses with toggle dropdown */}
-              <div>
+              <div className="text-center">
                 <button
                   onClick={() => setIsCourseOpen(!isCourseOpen)}
-                  className="w-full text-left text-gray-800 font-medium hover:text-blue-600 transition"
+                  className="text-gray-800 font-medium hover:text-blue-600 transition"
                 >
                   Courses {isCourseOpen ? '▲' : '▼'}
                 </button>
                 {isCourseOpen && (
-                  <div className="ml-4 mt-2 space-y-2 text-left">
+                  <div className="mt-2 space-y-2">
                     <a onClick={handleCloseMenu} href="https://www.klc.live/courses?category=neet" className="block text-gray-700 hover:text-blue-600">NEET</a>
                     <a onClick={handleCloseMenu} href="https://www.klc.live/courses?category=jee" className="block text-gray-700 hover:text-blue-600">JEE</a>
                     <a onClick={handleCloseMenu} href="https://www.klc.live/courses?category=foundation" className="block text-gray-700 hover:text-blue-600">Foundation</a>
