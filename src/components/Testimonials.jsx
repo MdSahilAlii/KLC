@@ -44,7 +44,7 @@ const Testimonials = () => {
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.3 }}
         >
           <p className="text-lg font-medium text-gray-600 font-pj">
             2,157 people have said how good Rareblocks
@@ -59,7 +59,7 @@ const Testimonials = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.4, delay: 0.3 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.3 }}
         >
           <a
             href="#"
@@ -76,7 +76,7 @@ const Testimonials = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 0.3 }}
             transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
+            viewport={{ once: false, amount: 0.3 }}
           >
             <div
               className="w-full h-full max-w-5xl mx-auto rounded-3xl blur-lg filter"
@@ -92,7 +92,7 @@ const Testimonials = () => {
             className="relative z-10 grid max-w-lg grid-cols-1 gap-6 mx-auto md:max-w-none lg:gap-10 md:grid-cols-3"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true }}
+            viewport={{ once: false, amount: 0.3 }}
           >
             {testimonials.map((testimonial, index) => (
               <motion.div

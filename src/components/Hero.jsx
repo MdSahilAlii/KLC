@@ -21,7 +21,7 @@ const Hero = () => {
                     className="w-full lg:w-1/2 text-center lg:text-left"
                     initial="initial"
                     whileInView="animate"
-                    viewport={{ once: true }}
+                    viewport={{ once: false, amount: 0.3 }}
                     variants={fadeInUp}
                 >
                     <motion.h1
@@ -69,7 +69,7 @@ const Hero = () => {
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.6, ease: 'easeOut', delay: 0.3 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: false, amount: 0.3 }}
                 >
                     <img 
                         src="https://images.unsplash.com/photo-1584697964358-3e14ca57658b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
