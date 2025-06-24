@@ -5,17 +5,22 @@ import Navbar from "@/components/Navbar";
 import Teachers from "@/components/Teachers";
 import Testimonials from "@/components/Testimonials";
 import Image from "next/image";
+import LocomotiveScrollProvider from "@/components/LocomotiveScrollProvider";
 
 
 export default function Home() {
   return (
+     
    <div>
+    <LocomotiveScrollProvider>
     <Navbar/>
     <Hero/>
     <Courses/>
     <Teachers/>
     <Testimonials/>
     <Footer/>
+    </LocomotiveScrollProvider>
    </div>
+   
   );
 }

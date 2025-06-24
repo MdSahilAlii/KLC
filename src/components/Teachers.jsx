@@ -49,7 +49,8 @@ const Teachers = () => {
                     initial={{ opacity: 0, y: -30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
-                    viewport={{ once: false, amount: 0.3 }}
+                    viewport={{ once: false, amount: 0.5 }}
+
                     className="text-4xl font-bold text-center text-gray-800 mb-4"
                 >
                     Learn from the Best Teachers
@@ -59,7 +60,8 @@ const Teachers = () => {
                     initial={{ opacity: 0, y: -10 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: 0.2 }}
-                    viewport={{ once: false, amount: 0.3 }}
+                    viewport={{ once: false, amount: 0.5 }}
+
                     className="text-center text-gray-600 mb-12 max-w-xl mx-auto"
                 >
                     Our experienced and passionate educators are dedicated to helping you excel in your academic journey.
@@ -74,7 +76,8 @@ const Teachers = () => {
                             initial="hidden"
                             whileInView="visible"
                             variants={cardVariants}
-                            viewport={{ once: false, amount: 0.3 }}
+                            viewport={{ once: false, amount: 0.5 }}
+
                         >
                             <img
                                 src={teacher.image}
