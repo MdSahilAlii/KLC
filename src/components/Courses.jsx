@@ -50,7 +50,7 @@ const Courses = () => {
                     initial={{ opacity: 0, y: -30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
-                    viewport={{ once: false, amount: 0.5 }}
+                    viewport={{ once: true, amount: 0.5 }}
 
                     className="text-4xl font-bold text-center text-blue-700 mb-4"
                 >
@@ -61,7 +61,7 @@ const Courses = () => {
                     initial={{ opacity: 0, y: -20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: 0.2 }}
-                    viewport={{ once: false, amount: 0.5 }}
+                    viewport={{ once: true, amount: 0.5 }}
 
                     className="text-center text-gray-500 mb-10 text-lg max-w-xl mx-auto"
                 >
@@ -76,7 +76,7 @@ const Courses = () => {
                             initial="hidden"
                             whileInView="visible"
                             variants={cardVariants}
-                            viewport={{ once: false, amount: 0.5 }}
+                            viewport={{ once: true, amount: 0.5 }}
 
                             className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1"
                         >

@@ -41,7 +41,7 @@ const Footer = () => {
             initial="hidden"
             whileInView="visible"
             variants={footerVariants}
-            viewport={{ once: false, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
 
           >
             <h3 className="text-2xl font-bold mb-4 text-white">Kalam Learning Centre</h3>
@@ -65,7 +65,7 @@ const Footer = () => {
               initial="hidden"
               whileInView="visible"
               variants={footerVariants}
-              viewport={{ once: false, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.5 }}
 
             >
               <h4 className="text-lg font-semibold mb-4">{section.title}</h4>
@@ -86,7 +86,7 @@ const Footer = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.5 }}
-          viewport={{ once: false, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.5 }}
 
         >
           © {new Date().getFullYear()} Kalam Learning Centre. All rights reserved.

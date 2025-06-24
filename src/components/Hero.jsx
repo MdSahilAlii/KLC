@@ -21,7 +21,7 @@ const Hero = () => {
                     className="w-full lg:w-1/2 text-center lg:text-left"
                     initial="initial"
                     whileInView="animate"
-                    viewport={{ once: false, amount: 0.5 }}
+                    viewport={{ once: true, amount: 0.5 }}
 
                     variants={fadeInUp}
                 >
@@ -70,7 +70,7 @@ const Hero = () => {
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.6, ease: 'easeOut', delay: 0.3 }}
-                    viewport={{ once: false, amount: 0.5 }}
+                    viewport={{ once: true, amount: 0.5 }}
 
                 >
                     <img 
