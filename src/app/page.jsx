@@ -6,6 +6,7 @@ import Teachers from "@/components/Teachers";
 import Testimonials from "@/components/Testimonials";
 import Image from "next/image";
 import LocomotiveScrollProvider from "@/components/LocomotiveScrollProvider";
+import HeroBanner from "@/components/HeroBanner";
 
 
 export default function Home() {
@@ -14,7 +15,8 @@ export default function Home() {
    <div>
     <LocomotiveScrollProvider>
     <Navbar/>
-    <Hero/>
+   
+    <HeroBanner/>
     <Courses/>
     <Teachers/>
     <Testimonials/>

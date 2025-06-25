@@ -46,16 +46,16 @@ const Navbar = () => {
               Courses
               <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-blue-500 transition-all group-hover:w-full"></span>
             </a>
-            <motion.div
+            <div
               initial={{ opacity: 0, scale: 0.95 }}
-              whileHover={{ opacity: 1, scale: 1 }}
+              hover={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.2 }}
               className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 scale-95 group-hover:scale-100 transition-all duration-200 z-50 pointer-events-none group-hover:pointer-events-auto"
             >
               <a href="https://www.klc.live/courses?category=neet" className="block px-4 py-2 text-gray-800 hover:bg-blue-100">NEET</a>
               <a href="https://www.klc.live/courses?category=jee" className="block px-4 py-2 text-gray-800 hover:bg-blue-100">JEE</a>
               <a href="https://www.klc.live/courses?category=foundation" className="block px-4 py-2 text-gray-800 hover:bg-blue-100">Foundation</a>
-            </motion.div>
+            </div>
           </div>
 
           {['Live Classes', 'Practice', 'About Us'].map((item, i) => (
