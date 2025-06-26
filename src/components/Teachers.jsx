@@ -2,92 +2,90 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const teachersData = [
+const teachers = [
     {
         name: "Dr. Ananya Sharma",
-        subject: "Physics Expert",
-        experience: "IIT Delhi | 12+ years experience | 5000+ students",
-        image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80"
+        subject: "Physics",
+        experience: "12+ years • IIT Delhi",
+        image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=687&q=80"
     },
     {
         name: "Prof. Rajesh Kumar",
-        subject: "Chemistry Expert",
-        experience: "IIT Bombay | 15+ years experience | 8000+ students",
-        image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80"
+        subject: "Chemistry",
+        experience: "15+ years • IIT Bombay",
+        image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=687&q=80"
     },
     {
         name: "Dr. Priya Singh",
-        subject: "Mathematics Expert",
-        experience: "IIT Kanpur | 10+ years experience | 6000+ students",
-        image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80"
+        subject: "Mathematics",
+        experience: "10+ years • IIT Kanpur",
+        image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=687&q=80"
     },
     {
         name: "Dr. Amit Patel",
-        subject: "Biology Expert",
-        experience: "AIIMS Delhi | 8+ years experience | 4000+ students",
-        image: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+        subject: "Biology",
+        experience: "8+ years • AIIMS Delhi",
+        image: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&w=1470&q=80"
     }
 ];
 
 const cardVariants = {
-    hidden: { opacity: 0, y: 40 },
-    visible: (i) => ({
+    hidden: { opacity: 0, y: 60 },
+    visible: i => ({
         opacity: 1,
         y: 0,
         transition: {
-            duration: 0.5,
-            delay: i * 0.2
+            delay: i * 0.2,
+            duration: 0.6
         }
     })
 };
 
 const Teachers = () => {
     return (
-        <section className="py-20 bg-gray-50">
-            <div className="container mx-auto px-4">
+        <section className="py-24 bg-white text-gray-900">
+            <div className="max-w-7xl mx-auto px-6 text-center">
                 <motion.h2
                     initial={{ opacity: 0, y: -30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
-                    viewport={{ once: true, amount: 0.5 }}
-
-                    className="text-4xl font-bold text-center text-gray-800 mb-4"
+                    viewport={{ once: true }}
+                    className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight text-gray-900"
                 >
-                    Learn from the Best Teachers
+                    Meet Our <span className="text-cyan-600">Top Mentors</span>
                 </motion.h2>
-
                 <motion.p
                     initial={{ opacity: 0, y: -10 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: 0.2 }}
-                    viewport={{ once: true, amount: 0.5 }}
-
-                    className="text-center text-gray-600 mb-12 max-w-xl mx-auto"
+                    viewport={{ once: true }}
+                    className="text-gray-600 max-w-2xl mx-auto mb-14 leading-relaxed"
                 >
-                    Our experienced and passionate educators are dedicated to helping you excel in your academic journey.
+                    Handpicked educators with proven excellence, ready to transform your learning experience.
                 </motion.p>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    {teachersData.map((teacher, index) => (
+                <div className="flex flex-wrap justify-center gap-10">
+                    {teachers.map((t, i) => (
                         <motion.div
-                            key={index}
-                            className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
-                            custom={index}
+                            key={i}
+                            custom={i}
                             initial="hidden"
                             whileInView="visible"
                             variants={cardVariants}
-                            viewport={{ once: true, amount: 0.5 }}
-
+                            viewport={{ once: true }}
+                            className="w-full max-w-xs p-6 rounded-3xl bg-white border border-gray-200 hover:scale-[1.04] transition-transform duration-300 shadow-lg"
                         >
-                            <img
-                                src={teacher.image}
-                                alt={teacher.name}
-                                className="w-full h-64 object-cover"
-                            />
-                            <div className="p-6 text-center">
-                                <h3 className="text-xl font-semibold text-gray-800 mb-1">{teacher.name}</h3>
-                                <p className="text-indigo-600 font-medium mb-2">{teacher.subject}</p>
-                                <p className="text-gray-600 text-sm leading-relaxed">{teacher.experience}</p>
+                            <div className="flex flex-col items-center">
+                                <img
+                                    src={t.image}
+                                    alt={t.name}
+                                    className="w-28 h-28 rounded-full object-cover border-4 border-cyan-500 mb-5 shadow"
+                                />
+                                <h3 className="text-xl font-bold text-gray-900 mb-1">{t.name}</h3>
+                                <p className="text-cyan-600 font-medium tracking-wide mb-2">
+                                    {t.subject}
+                                </p>
+                                <p className="text-sm text-gray-600">{t.experience}</p>
                             </div>
                         </motion.div>
                     ))}
