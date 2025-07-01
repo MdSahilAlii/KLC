@@ -3,6 +3,7 @@
 body {
     margin: 0;
      font-family: 'Poppins';font-size: 19px;
+     
 }
 
 .hero-gradient {
@@ -20,3 +21,12 @@ html {
   -webkit-background-clip: text;
   color: transparent;
 }
+/* #courses,#teachers {
+  background: #8EE5ED;
+background: linear-gradient(90deg, rgba(142, 229, 237, 1) 0%, rgba(128, 193, 209, 1) 50%, rgba(56, 164, 176, 1) 100%);
+} */
+ /* #courses,#teachers {
+  background-color: #efefef;
+ } */
+
+ 

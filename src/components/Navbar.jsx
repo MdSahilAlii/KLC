@@ -24,7 +24,7 @@ const Navbar = () => {
       initial={{ y: -60, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ type: 'spring', stiffness: 80 }}
-      className="bg-white/70 backdrop-blur-lg shadow-xl sticky top-0 z-50 border-b border-white/30 font-ubuntu"
+      className="bg-white/70 backdrop-blur-lg shadow-xl sticky top-0 z-50 border-b border-white/30 font-poppins"
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
@@ -33,31 +33,54 @@ const Navbar = () => {
           whileHover={{ scale: 1.05 }}
           className="text-2xl font-extrabold text-blue-700 tracking-wide"
         >
-          Kalam Learning Centre
+          KLC
         </motion.a>
 
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-8 items-center relative">
+          {/* Courses Dropdown on Hover */}
           <div className="relative group">
-            <a
-              href="https://www.klc.live/courses"
-              className="text-gray-700 font-medium hover:text-blue-600 relative"
-            >
-              Courses
-              <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-blue-500 transition-all group-hover:w-full"></span>
-            </a>
-            <div
-              initial={{ opacity: 0, scale: 0.95 }}
-              hover={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.2 }}
-              className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 scale-95 group-hover:scale-100 transition-all duration-200 z-50 pointer-events-none group-hover:pointer-events-auto"
-            >
-              <a href="https://www.klc.live/courses?category=neet" className="block px-4 py-2 text-gray-800 hover:bg-blue-100">NEET</a>
-              <a href="https://www.klc.live/courses?category=jee" className="block px-4 py-2 text-gray-800 hover:bg-blue-100">JEE</a>
-              <a href="https://www.klc.live/courses?category=foundation" className="block px-4 py-2 text-gray-800 hover:bg-blue-100">Foundation</a>
+            <div className="flex items-center space-x-1 cursor-pointer text-gray-700 font-medium hover:text-blue-600">
+              <span>Courses</span>
+              <svg
+                className="w-3 h-3 transform transition-transform duration-200 group-hover:rotate-180"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
+
+            <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <a
+                href="https://www.klc.live/courses?category=neet"
+                className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
+              >
+                NEET
+              </a>
+              <a
+                href="https://www.klc.live/courses?category=jee"
+                className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
+              >
+                JEE
+              </a>
+              <a
+                href="https://www.klc.live/courses?category=foundation"
+                className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
+              >
+                Foundation
+              </a>
             </div>
           </div>
 
+          {/* Other Links */}
           {['Live Classes', 'Practice', 'About Us'].map((item, i) => (
             <motion.a
               key={i}
@@ -77,25 +100,28 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* Desktop Buttons */}
-        <div className="hidden md:flex items-center space-x-4">
+        {/* Desktop Login */}
+        <div className="hidden md:flex items-center">
           <motion.button
             whileHover={{ scale: 1.05 }}
+            onClick={() =>
+              window.open(
+                'https://login.klc.live/login?orgCode=tgbukb',
+                '_blank'
+              )
+            }
             className="px-4 py-2 text-blue-600 font-medium hover:bg-blue-100 rounded-full transition duration-200"
           >
             Login
-          </motion.button>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            className="bg-gradient-to-r from-blue-600 to-blue-500 text-white px-6 py-2 rounded-full font-semibold shadow-md hover:shadow-lg transition duration-200"
-          >
-            Sign Up
           </motion.button>
         </div>
 
         {/* Mobile Menu Toggle */}
         <div className="md:hidden">
-          <button onClick={() => setMenuOpen(!menuOpen)} className="text-gray-700 hover:text-blue-600 transition duration-200">
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="text-gray-700 hover:text-blue-600 transition duration-200"
+          >
             {menuOpen ? <FaTimes size={22} /> : <FaBars size={22} />}
           </button>
         </div>
@@ -113,7 +139,7 @@ const Navbar = () => {
             className="md:hidden px-6 pb-6 pt-2 backdrop-blur-md"
           >
             <div className="space-y-4 text-center">
-              {/* Courses Mobile Toggle */}
+              {/* Mobile Courses Toggle */}
               <div className="text-center">
                 <button
                   onClick={() => setIsCourseOpen(!isCourseOpen)}
@@ -123,18 +149,34 @@ const Navbar = () => {
                 </button>
                 <AnimatePresence>
                   {isCourseOpen && (
-                    <motion.div
-                      {...fadeIn}
-                      className="mt-2 space-y-2"
-                    >
-                      <a onClick={handleCloseMenu} href="https://www.klc.live/courses?category=neet" className="block text-gray-700 hover:text-blue-600">NEET</a>
-                      <a onClick={handleCloseMenu} href="https://www.klc.live/courses?category=jee" className="block text-gray-700 hover:text-blue-600">JEE</a>
-                      <a onClick={handleCloseMenu} href="https://www.klc.live/courses?category=foundation" className="block text-gray-700 hover:text-blue-600">Foundation</a>
+                    <motion.div {...fadeIn} className="mt-2 space-y-2">
+                      <a
+                        onClick={handleCloseMenu}
+                        href="https://www.klc.live/courses?category=neet"
+                        className="block text-gray-700 hover:text-blue-600"
+                      >
+                        NEET
+                      </a>
+                      <a
+                        onClick={handleCloseMenu}
+                        href="https://www.klc.live/courses?category=jee"
+                        className="block text-gray-700 hover:text-blue-600"
+                      >
+                        JEE
+                      </a>
+                      <a
+                        onClick={handleCloseMenu}
+                        href="https://www.klc.live/courses?category=foundation"
+                        className="block text-gray-700 hover:text-blue-600"
+                      >
+                        Foundation
+                      </a>
                     </motion.div>
                   )}
                 </AnimatePresence>
               </div>
 
+              {/* Other Mobile Links */}
               {['Live Classes', 'Practice', 'About Us'].map((item, i) => (
                 <motion.a
                   {...fadeIn}
@@ -157,17 +199,16 @@ const Navbar = () => {
 
               <motion.button
                 whileTap={{ scale: 0.95 }}
-                onClick={handleCloseMenu}
+                onClick={() => {
+                  handleCloseMenu();
+                  window.open(
+                    'https://login.klc.live/login?orgCode=tgbukb',
+                    '_blank'
+                  );
+                }}
                 className="w-full text-blue-600 font-semibold hover:bg-blue-50 py-2 rounded-full transition"
               >
                 Login
-              </motion.button>
-              <motion.button
-                whileTap={{ scale: 0.95 }}
-                onClick={handleCloseMenu}
-                className="w-full bg-blue-600 text-white py-2 rounded-full font-semibold hover:bg-blue-700 transition"
-              >
-                Sign Up
               </motion.button>
             </div>
           </motion.div>
