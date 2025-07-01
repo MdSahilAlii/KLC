@@ -14,6 +14,7 @@ const courses = [
     reviews: 1245,
     image:
       "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=1471&q=80",
+    link: "https://www.klc.live/courses/neet-pinnacle-2027"
   },
   {
     title: "NEET UG Complete",
@@ -25,6 +26,7 @@ const courses = [
     reviews: 890,
     image:
       "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1470&q=80",
+    link: "https://www.klc.live/courses/neet-ug-complete"
   },
   {
     title: "CBSE Class 12",
@@ -36,6 +38,7 @@ const courses = [
     reviews: 1520,
     image:
       "https://images.unsplash.com/photo-1503676260728-1c00da094a0d?auto=format&fit=crop&w=1422&q=80",
+    link: "https://www.klc.live/courses/cbse-class-12"
   },
 ];
 
@@ -50,8 +53,9 @@ const cardVariants = {
 
 const Courses = () => {
   return (
-    <section className="py-24 bg-gray-1 text-gray-900" id="courses">
+    <section className="py-24 bg-gradient-to-br from-white via-gray-50 to-gray-100 text-gray-900" id="courses">
       <div className="max-w-7xl mx-auto px-6 text-center">
+        {/* Heading */}
         <motion.h2
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -62,6 +66,7 @@ const Courses = () => {
           Choose Your <span className="text-cyan-600">Perfect Program</span>
         </motion.h2>
 
+        {/* Subheading */}
         <motion.p
           initial={{ opacity: 0, y: -10 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -73,7 +78,8 @@ const Courses = () => {
           premium materials, and modern test strategies.
         </motion.p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        {/* Course Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-12">
           {courses.map((course, i) => (
             <motion.div
               key={i}
@@ -82,40 +88,42 @@ const Courses = () => {
               whileInView="visible"
               variants={cardVariants}
               viewport={{ once: true }}
-              className="rounded-3xl overflow-hidden bg-white border border-gray-200 shadow-xl hover:shadow-cyan-200 transition duration-300 transform hover:-translate-y-1"
+              className="rounded-3xl overflow-hidden bg-white/90 backdrop-blur border border-gray-200 shadow-xl hover:shadow-cyan-200 transition duration-300 transform hover:-translate-y-1 h-full flex flex-col"
             >
               <img
                 src={course.image}
                 alt={course.title}
-                className="w-full h-48 object-cover"
+                className="w-full h-52 md:h-48 object-cover"
               />
-              <div className="p-6 flex flex-col justify-between h-full text-left">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  {course.title}
-                </h3>
-                <p className="text-gray-600 text-sm mb-4">
-                  {course.description}
-                </p>
+              <div className="p-6 flex flex-col h-full text-left">
+                {/* Top content */}
+                <div className="flex-grow">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">
+                    {course.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4">
+                    {course.description}
+                  </p>
 
-                {/* Rating */}
-                <div className="flex items-center mb-4">
-                  {[...Array(5)].map((_, index) => (
-                    <FaStar
-                      key={index}
-                      className={`mr-1 ${
-                        index < Math.floor(course.rating)
-                          ? "text-yellow-400"
-                          : "text-gray-300"
-                      }`}
-                    />
-                  ))}
-                  <span className="ml-2 text-sm text-gray-500">
-                    {course.rating} ({course.reviews} reviews)
-                  </span>
+                  <div className="flex items-center mb-4">
+                    {[...Array(5)].map((_, index) => (
+                      <FaStar
+                        key={index}
+                        className={`mr-1 ${
+                          index < Math.floor(course.rating)
+                            ? "text-yellow-400"
+                            : "text-gray-300"
+                        }`}
+                      />
+                    ))}
+                    <span className="ml-2 text-sm text-gray-500">
+                      {course.rating} ({course.reviews} reviews)
+                    </span>
+                  </div>
                 </div>
 
-                {/* Pricing + CTA */}
-                <div className="flex justify-between items-center mt-auto">
+                {/* Bottom CTA */}
+                <div className="flex justify-between items-end mt-4 pt-4 border-t border-gray-100">
                   <div>
                     <div className="text-sm line-through text-gray-400">
                       {course.originalPrice}
@@ -127,8 +135,10 @@ const Courses = () => {
                   <motion.a
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    href="https://www.klc.live/courses/639277"
-                    className="px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 to-blue-600 rounded-xl shadow-lg hover:shadow-cyan-400/40 transition"
+                    href={course.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 to-blue-600 rounded-xl shadow-md hover:shadow-cyan-400/40 transition"
                   >
                     Enroll Now
                   </motion.a>
@@ -137,6 +147,18 @@ const Courses = () => {
             </motion.div>
           ))}
         </div>
+
+        {/* See All Courses Button */}
+        <motion.a
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          href="/courses"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-8 py-3 text-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full shadow-md hover:shadow-blue-300 transition"
+        >
+          See All Courses
+        </motion.a>
       </div>
     </section>
   );
