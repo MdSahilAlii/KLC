@@ -14,7 +14,7 @@ const courses = [
     reviews: 1245,
     image:
       "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=1471&q=80",
-    link: "https://www.klc.live/courses/neet-pinnacle-2027"
+    link: "https://www.klc.live/courses/neet-pinnacle-2027/639277"
   },
   {
     title: "NEET UG Complete",
@@ -26,7 +26,7 @@ const courses = [
     reviews: 890,
     image:
       "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1470&q=80",
-    link: "https://www.klc.live/courses/neet-ug-complete"
+    link: "https://www.klc.live/courses/neet-ug-complete/647079"
   },
   {
     title: "CBSE Class 12",
@@ -38,7 +38,7 @@ const courses = [
     reviews: 1520,
     image:
       "https://images.unsplash.com/photo-1503676260728-1c00da094a0d?auto=format&fit=crop&w=1422&q=80",
-    link: "https://www.klc.live/courses/cbse-class-12"
+    link: "https://www.klc.live/courses/cbse-class-12/638895?mainCategory=16"
   },
 ];
 
