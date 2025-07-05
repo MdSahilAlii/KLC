@@ -33,7 +33,7 @@ const Navbar = () => {
           whileHover={{ scale: 1.05 }}
           className="text-2xl font-extrabold text-blue-700 tracking-wide"
         >
-          KLC
+          <img src="klc.jpg" alt="KLC Logo" className="h-10" />
         </motion.a>
 
         {/* Desktop Links */}

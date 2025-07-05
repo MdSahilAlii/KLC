@@ -9,126 +9,133 @@ const CoursesPage = () => {
 
   const categories = [
     { id: 'all', name: 'All Courses', gradient: 'from-violet-600 via-purple-600 to-indigo-600', bgGradient: 'from-violet-50 to-purple-50' },
-    { id: 'design', name: 'Design', gradient: 'from-blue-600 via-cyan-600 to-teal-600', bgGradient: 'from-blue-50 to-cyan-50' },
-    { id: 'development', name: 'Development', gradient: 'from-emerald-600 via-green-600 to-teal-600', bgGradient: 'from-emerald-50 to-green-50' },
-    { id: 'business', name: 'Business', gradient: 'from-amber-600 via-orange-600 to-red-600', bgGradient: 'from-amber-50 to-orange-50' },
-    { id: 'marketing', name: 'Marketing', gradient: 'from-pink-600 via-rose-600 to-red-600', bgGradient: 'from-pink-50 to-rose-50' }
+    { id: 'neet', name: 'NEET', gradient: 'from-blue-600 via-cyan-600 to-teal-600', bgGradient: 'from-blue-50 to-cyan-50' },
+    { id: 'jee', name: 'JEE', gradient: 'from-emerald-600 via-green-600 to-teal-600', bgGradient: 'from-emerald-50 to-green-50' },
+    { id: 'school', name: 'School Academics', gradient: 'from-amber-600 via-orange-600 to-red-600', bgGradient: 'from-amber-50 to-orange-50' }
+    // { id: 'marketing', name: 'Marketing', gradient: 'from-pink-600 via-rose-600 to-red-600', bgGradient: 'from-pink-50 to-rose-50' }
   ];
 
   const courses = [
     {
       id: 1,
-      title: "Advanced UI/UX Design Mastery",
+      title: "NEET 2025 30 Days Express Crash Course",
       instructor: "Sarah Chen",
       instructorTitle: "Senior Design Director at Meta",
-      category: "design",
-      price: 149,
-      originalPrice: 199,
+      category: "neet",
+      price:1999,
+      originalPrice: 6019,
       rating: 4.9,
       students: 12847,
       duration: "42 hours",
       lessons: 156,
       level: "Advanced",
-      image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop&auto=format",
+      image: "https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2F75a54457-aec6-4e35-8516-3dd604ea3278.png&w=640&q=75",
       gradient: "from-blue-600 via-cyan-600 to-teal-600",
       bgGradient: "from-blue-50 to-cyan-50",
       badge: "Most Popular",
-      description: "Master enterprise-level design systems and create stunning user experiences that drive business results."
+      description: "Master enterprise-level design systems and create stunning user experiences that drive business results.",
+      link:"https://www.klc.live/courses/647079?category=neet"
     },
     {
       id: 2,
-      title: "Full-Stack Development Pro",
+      title: "NEET Pinnacle 2027 - 2 Year Program",
       instructor: "Michael Rodriguez",
       instructorTitle: "Lead Software Architect at Google",
-      category: "development",
-      price: 179,
-      originalPrice: 249,
+      category: "neet",
+      price: 19999,
+      originalPrice: 30019,
       rating: 4.8,
       students: 8943,
       duration: "68 hours",
       lessons: 203,
       level: "Intermediate",
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&h=300&fit=crop&auto=format",
+      image: "https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2F38700a0c-ed4a-4c1c-8061-3e1bbc887ab6.png&w=640&q=75",
       gradient: "from-emerald-600 via-green-600 to-teal-600",
       bgGradient: "from-emerald-50 to-green-50",
       badge: "Trending",
-      description: "Build production-ready applications with cutting-edge technologies and industry best practices."
+      description: "Build production-ready applications with cutting-edge technologies and industry best practices.",
+      link:"https://www.klc.live/courses/639277?category=neet"
     },
     {
       id: 3,
-      title: "Strategic Digital Marketing",
+      title: "JEE Pinnacle 2027 - 2 Year Program",
       instructor: "Emma Thompson",
       instructorTitle: "VP of Marketing at HubSpot",
-      category: "marketing",
-      price: 129,
-      originalPrice: 179,
+      category: "jee",
+      price: 19999,
+      originalPrice: 30019,
       rating: 4.7,
       students: 15632,
       duration: "35 hours",
       lessons: 98,
       level: "Intermediate",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop&auto=format",
+      image: "https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2F88de103d-0f6c-47eb-8bea-aea79d743e65.jpg&w=640&q=75",
       gradient: "from-pink-600 via-rose-600 to-red-600",
       bgGradient: "from-pink-50 to-rose-50",
       badge: "Best Seller",
-      description: "Master data-driven marketing strategies that generate measurable ROI and sustainable growth."
+      description: "Master data-driven marketing strategies that generate measurable ROI and sustainable growth.",
+      link:"https://www.klc.live/courses/639269?mainCategory=8"
     },
     {
       id: 4,
-      title: "Executive Leadership Excellence",
+      title: "JEE Sprint 2026 - 1 Year Program",
       instructor: "David Park",
       instructorTitle: "CEO & Executive Coach",
-      category: "business",
-      price: 199,
-      originalPrice: 299,
+      category: "jee",
+      price: 14999,
+      originalPrice: 25019,
       rating: 4.9,
       students: 6754,
       duration: "52 hours",
       lessons: 127,
       level: "Advanced",
-      image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=500&h=300&fit=crop&auto=format",
+      image: "https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2F993f5177-df21-412b-b469-e8a94094cd66.jpg&w=640&q=75",
       gradient: "from-amber-600 via-orange-600 to-red-600",
       bgGradient: "from-amber-50 to-orange-50",
       badge: "Premium",
-      description: "Advanced leadership strategies and executive presence for C-suite professionals and entrepreneurs."
+      description: "Advanced leadership strategies and executive presence for C-suite professionals and entrepreneurs.",
+      link:"https://www.klc.live/courses/638898?mainCategory=8"
     },
     {
       id: 5,
-      title: "Motion Graphics & Brand Design",
+      title: "CBSE Grade 7 Foundation Builder",
       instructor: "Alexandra Kim",
       instructorTitle: "Creative Director at Adobe",
-      category: "design",
-      price: 159,
-      originalPrice: 219,
+      category: "school",
+      price: 5999,
+      originalPrice: 10019,
       rating: 4.8,
       students: 4287,
       duration: "46 hours",
       lessons: 134,
       level: "Advanced",
-      image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&h=300&fit=crop&auto=format",
+      image: "https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2Fdf194bab-bff1-4d96-af01-8c486a3c3834.png&w=640&q=75",
       gradient: "from-blue-600 via-cyan-600 to-teal-600",
       bgGradient: "from-blue-50 to-cyan-50",
       badge: "New",
-      description: "Create compelling motion graphics and brand experiences that captivate audiences and drive engagement."
+      description: "Create compelling motion graphics and brand experiences that captivate audiences and drive engagement.",
+      link:"https://www.klc.live/courses/622887?mainCategory=0"
+      
     },
     {
       id: 6,
-      title: "AI & Machine Learning Mastery",
+      title: "CBSE Grade 8 Foundation Builder",
       instructor: "Dr. Lisa Wang",
       instructorTitle: "Principal Data Scientist at Microsoft",
-      category: "development",
-      price: 189,
-      originalPrice: 259,
+      category: "school",
+      price: 5999,
+      originalPrice: 10019,
       rating: 4.9,
       students: 9876,
       duration: "78 hours",
       lessons: 234,
       level: "Advanced",
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500&h=300&fit=crop&auto=format",
+      image: "https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2F4535e7de-5601-462e-84e4-a45509f2cd95.png&w=640&q=75",
       gradient: "from-emerald-600 via-green-600 to-teal-600",
       bgGradient: "from-emerald-50 to-green-50",
       badge: "Hot",
-      description: "Master cutting-edge AI technologies and build intelligent systems that solve real-world problems."
+      description: "Master cutting-edge AI technologies and build intelligent systems that solve real-world problems.",
+      link:"https://www.klc.live/courses/623132?mainCategory=0"
     }
   ];
 
@@ -252,7 +259,7 @@ const CoursesPage = () => {
                   alt={course.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className={`absolute inset-0 bg-gradient-to-br ${course.gradient} opacity-60`}></div>
+                {/* <div className={`absolute inset-0 bg-gradient-to-br ${course.gradient} opacity-60`}></div> */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                 
                 {/* Badges */}
@@ -268,11 +275,11 @@ const CoursesPage = () => {
                 </div>
                 
                 {/* Play Button */}
-                <div className="absolute top-4 right-4">
+                {/* <div className="absolute top-4 right-4">
                   <div className="bg-white/90 backdrop-blur-sm rounded-full p-3 opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-white hover:scale-110 shadow-lg">
                     <Play className="w-5 h-5 text-slate-700" />
                   </div>
-                </div>
+                </div> */}
                 
                 {/* Discount Badge */}
                 <div className="absolute bottom-4 left-4">
@@ -324,7 +331,7 @@ const CoursesPage = () => {
                 </div>
 
                 {/* Instructor */}
-                <div className="flex items-center gap-3 mb-6 p-4 bg-gradient-to-r from-slate-50 to-slate-100/50 rounded-2xl border border-slate-200/50">
+                {/* <div className="flex items-center gap-3 mb-6 p-4 bg-gradient-to-r from-slate-50 to-slate-100/50 rounded-2xl border border-slate-200/50">
                   <div className={`w-12 h-12 bg-gradient-to-r ${course.gradient} rounded-2xl flex items-center justify-center text-white font-bold shadow-lg`}>
                     {course.instructor.split(' ').map(n => n[0]).join('')}
                   </div>
@@ -332,20 +339,24 @@ const CoursesPage = () => {
                     <div className="font-semibold text-slate-900">{course.instructor}</div>
                     <div className="text-slate-600 text-sm">{course.instructorTitle}</div>
                   </div>
-                </div>
+                </div> */}
 
                 {/* Price and CTA */}
                 <div className="flex items-center justify-between">
                   <div className="flex items-baseline gap-2">
-                    <span className="text-3xl font-bold bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent">
-                      ${course.price}
+                    <span className="text-2xl font-bold bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent">
+                      ₹{course.price}
                     </span>
-                    <span className="text-slate-400 line-through text-lg">${course.originalPrice}</span>
+                    <span className="text-slate-400 line-through text-base">₹{course.originalPrice}</span>
                   </div>
+                  <a
+                  href={course.link}
+                  >
                   <button className={`bg-gradient-to-r ${course.gradient} text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg hover:shadow-indigo-500/25 transition-all duration-300 transform hover:scale-105 flex items-center gap-2`}>
                     Enroll Now
                     <ChevronRight className="w-4 h-4" />
                   </button>
+                  </a>
                 </div>
               </div>
 

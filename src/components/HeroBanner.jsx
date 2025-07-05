@@ -20,7 +20,7 @@ const slides = [
     heading: 'Crack Olympiads and NTSE with',
     highlight: 'Focused Mentorship',
     description: 'Targeted preparation, personalized plans, and practice tests for competitive edge.',
-    image: 'https://images.unsplash.com/photo-1554774853-d50f9c681ae2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80',
+    image: 'https://images.unsplash.com/photo-1554774853-d50f9c681ae3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=89',
   },
 ];
 
