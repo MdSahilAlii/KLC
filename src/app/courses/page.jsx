@@ -11,7 +11,7 @@ const CoursesPage = () => {
     { id: 'all', name: 'All Courses', gradient: 'from-violet-600 via-purple-600 to-indigo-600', bgGradient: 'from-violet-50 to-purple-50' },
     { id: 'neet', name: 'NEET', gradient: 'from-blue-600 via-cyan-600 to-teal-600', bgGradient: 'from-blue-50 to-cyan-50' },
     { id: 'jee', name: 'JEE', gradient: 'from-emerald-600 via-green-600 to-teal-600', bgGradient: 'from-emerald-50 to-green-50' },
-    { id: 'school', name: 'School Academics', gradient: 'from-amber-600 via-orange-600 to-red-600', bgGradient: 'from-amber-50 to-orange-50' }
+    { id: 'school', name: 'CBSE', gradient: 'from-amber-600 via-orange-600 to-red-600', bgGradient: 'from-amber-50 to-orange-50' }
     // { id: 'marketing', name: 'Marketing', gradient: 'from-pink-600 via-rose-600 to-red-600', bgGradient: 'from-pink-50 to-rose-50' }
   ];
 
