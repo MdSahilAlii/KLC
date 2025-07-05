@@ -8,36 +8,36 @@ const courses = [
     title: "NEET Pinnacle 2027 - 2 Year Program",
     description:
       "A 2-year intensive program for NEET aspirants with expert faculty and comprehensive study material.",
-    price: "₹19,999",
-    originalPrice: "₹25,000",
+    price: "₹15,999",
+    originalPrice: "₹30,019",
     rating: 4.8,
     reviews: 1245,
     image:
-      "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=1471&q=80",
+      "https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2F38700a0c-ed4a-4c1c-8061-3e1bbc887ab6.png&w=640&q=75",
     link: "https://www.klc.live/courses/neet-pinnacle-2027/639277"
   },
   {
-    title: "NEET UG Complete",
+    title: "NEET 2025 30 Days Express Crash Course",
     description:
       "Comprehensive NEET preparation with NCERT focus and test series.",
-    price: "₹17,999",
-    originalPrice: "₹22,000",
+    price: "₹1,999",
+    originalPrice: "₹6,019",
     rating: 4.9,
     reviews: 890,
     image:
-      "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1470&q=80",
+      "https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2F75a54457-aec6-4e35-8516-3dd604ea3278.png&w=640&q=75",
     link: "https://www.klc.live/courses/neet-ug-complete/647079"
   },
   {
-    title: "CBSE Class 12",
+    title: "JEE Pinnacle 2027 - 2 Year Program",
     description:
-      "Board exam preparation with chapter-wise tests and sample papers.",
-    price: "₹12,999",
-    originalPrice: "₹15,000",
+      "A 2-year intensive program for JEE aspirants with expert faculty and comprehensive study material.",
+    price: "₹19,999",
+    originalPrice: "30,019",
     rating: 5.0,
     reviews: 1520,
     image:
-      "https://images.unsplash.com/photo-1503676260728-1c00da094a0d?auto=format&fit=crop&w=1422&q=80",
+      "https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2F88de103d-0f6c-47eb-8bea-aea79d743e65.jpg&w=640&q=75",
     link: "https://www.klc.live/courses/cbse-class-12/638895?mainCategory=16"
   },
 ];
