@@ -11,8 +11,9 @@ const CoursesPage = () => {
     { id: 'all', name: 'All Courses', gradient: 'from-violet-600 via-purple-600 to-indigo-600', bgGradient: 'from-violet-50 to-purple-50' },
     { id: 'neet', name: 'NEET', gradient: 'from-blue-600 via-cyan-600 to-teal-600', bgGradient: 'from-blue-50 to-cyan-50' },
     { id: 'jee', name: 'JEE', gradient: 'from-emerald-600 via-green-600 to-teal-600', bgGradient: 'from-emerald-50 to-green-50' },
-    { id: 'school', name: 'CBSE', gradient: 'from-amber-600 via-orange-600 to-red-600', bgGradient: 'from-amber-50 to-orange-50' }
-    // { id: 'marketing', name: 'Marketing', gradient: 'from-pink-600 via-rose-600 to-red-600', bgGradient: 'from-pink-50 to-rose-50' }
+    { id: 'cbse', name: 'CBSE', gradient: 'from-amber-600 via-orange-600 to-red-600', bgGradient: 'from-amber-50 to-orange-50' },
+     {id: 'jee/neet', name: 'JEE/NEET', gradient: 'from-amber-600 via-orange-600 to-red-600', bgGradient: 'from-amber-50 to-orange-50' },
+    { id: 'amu/jmi', name: 'AMU/JMI', gradient: 'from-pink-600 via-rose-600 to-red-600', bgGradient: 'from-pink-50 to-rose-50' }
   ];
 
   const courses = [
@@ -101,7 +102,7 @@ const CoursesPage = () => {
       title: "CBSE Grade 7 Foundation Builder",
       instructor: "Alexandra Kim",
       instructorTitle: "Creative Director at Adobe",
-      category: "school",
+      category: "cbse",
       price: 5999,
       originalPrice: 10019,
       rating: 4.8,
@@ -122,7 +123,7 @@ const CoursesPage = () => {
       title: "CBSE Grade 8 Foundation Builder",
       instructor: "Dr. Lisa Wang",
       instructorTitle: "Principal Data Scientist at Microsoft",
-      category: "school",
+      category: "cbse",
       price: 5999,
       originalPrice: 10019,
       rating: 4.9,
@@ -136,6 +137,245 @@ const CoursesPage = () => {
       badge: "Hot",
       description: "Master cutting-edge AI technologies and build intelligent systems that solve real-world problems.",
       link:"https://www.klc.live/courses/623132?mainCategory=0"
+    },
+     {
+      id: 7,
+      title: "Parwaz 2.0",
+      instructor: "Dr. Lisa Wang",
+      instructorTitle: "Principal Data Scientist at Microsoft",
+      category: "amu/jmi",
+      price: 399,
+      originalPrice: 4019,
+      rating: 4.9,
+      students: 9876,
+      duration: "78 hours",
+      lessons: 234,
+      level: "Advanced",
+      image: "https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2F9e7092b3-3dc7-4fb1-828e-69cbab71f614.png&w=640&q=75",
+      gradient: "from-emerald-600 via-green-600 to-teal-600",
+      bgGradient: "from-emerald-50 to-green-50",
+      badge: "Hot",
+      description: "Master cutting-edge AI technologies and build intelligent systems that solve real-world problems.",
+      link:"https://www.klc.live/courses/624176?mainCategory=0&subCatList=%5B273449%5D"
+    },
+     {
+      id: 8,
+      title: "Aaghaz 2.0: AMU & JMI Prep for Grade 9",
+      instructor: "Dr. Lisa Wang",
+      instructorTitle: "Principal Data Scientist at Microsoft",
+      category: "amu/jmi",
+      price: 399,
+      originalPrice: 4019,
+      rating: 4.9,
+      students: 9876,
+      duration: "78 hours",
+      lessons: 234,
+      level: "Advanced",
+      image: "https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2F1e554b6f-9c7b-4122-a2d4-839a005155ac.png&w=640&q=75",
+      gradient: "from-emerald-600 via-green-600 to-teal-600",
+      bgGradient: "from-emerald-50 to-green-50",
+      badge: "Hot",
+      description: "Master cutting-edge AI technologies and build intelligent systems that solve real-world problems.",
+      link:"https://www.klc.live/courses/624174?mainCategory=0&subCatList=%5B273449%5D"
+    },
+     {
+      id: 9,
+      title: "CBSE Grade 6 Foundation Builder",
+      instructor: "Dr. Lisa Wang",
+      instructorTitle: "Principal Data Scientist at Microsoft",
+      category: "cbse",
+      price: 5999,
+      originalPrice: 10019,
+      rating: 4.9,
+      students: 9876,
+      duration: "78 hours",
+      lessons: 234,
+      level: "Advanced",
+      image: "https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2F72706ece-4ed2-46cc-bbe8-4a943389cf37.png&w=640&q=75",
+      gradient: "from-emerald-600 via-green-600 to-teal-600",
+      bgGradient: "from-emerald-50 to-green-50",
+      badge: "Hot",
+      description: "Master cutting-edge AI technologies and build intelligent systems that solve real-world problems.",
+      link:"https://www.klc.live/courses/622886?mainCategory=0&subCatList=%5B274454%5D"
+    },
+     {
+      id: 10,
+      title: "Grade 9 CBSE Step-Up Batch",
+      instructor: "Dr. Lisa Wang",
+      instructorTitle: "Principal Data Scientist at Microsoft",
+      category: "cbse",
+      price: 9999,
+      originalPrice: 16019,
+      rating: 4.9,
+      students: 9876,
+      duration: "78 hours",
+      lessons: 234,
+      level: "Advanced",
+      image: "https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2F04b5fb2f-5618-4ef2-bc72-b4420b3baec6.png&w=640&q=75",
+      gradient: "from-emerald-600 via-green-600 to-teal-600",
+      bgGradient: "from-emerald-50 to-green-50",
+      badge: "Hot",
+      description: "Master cutting-edge AI technologies and build intelligent systems that solve real-world problems.",
+      link:"https://www.klc.live/courses/622889?mainCategory=0&subCatList=%5B274457%2C274458%2C274459%2C274460%2C274461%2C274462%2C282668%5D"
+    },
+     {
+      id: 11,
+      title: "Grade 10 CBSE X-Celebrate Batch",
+      instructor: "Dr. Lisa Wang",
+      instructorTitle: "Principal Data Scientist at Microsoft",
+      category: "cbse",
+      price: 9999,
+      originalPrice: 16019,
+      rating: 4.9,
+      students: 9876,
+      duration: "78 hours",
+      lessons: 234,
+      level: "Advanced",
+      image: "https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2F4535e7de-5601-462e-84e4-a45509f2cd95.png&w=640&q=75",
+      gradient: "from-emerald-600 via-green-600 to-teal-600",
+      bgGradient: "from-emerald-50 to-green-50",
+      badge: "Hot",
+      description: "Master cutting-edge AI technologies and build intelligent systems that solve real-world problems.",
+      link:"https://www.klc.live/courses/623132?mainCategory=0"
+    },
+     {
+      id: 12,
+      title: "Grade 9 JEE/NEET Foundation 2026",
+      instructor: "Dr. Lisa Wang",
+      instructorTitle: "Principal Data Scientist at Microsoft",
+      category: "jee/neet",
+      price: 12499,
+      originalPrice: 20019,
+      rating: 4.9,
+      students: 9876,
+      duration: "78 hours",
+      lessons: 234,
+      level: "Advanced",
+      image: "https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2F941efab6-0b4b-4990-b512-2a57fdfa981c.png&w=640&q=75",
+      gradient: "from-emerald-600 via-green-600 to-teal-600",
+      bgGradient: "from-emerald-50 to-green-50",
+      badge: "Hot",
+      description: "Master cutting-edge AI technologies and build intelligent systems that solve real-world problems.",
+      link:"https://www.klc.live/courses/622892?mainCategory=0&subCatList=%5B274457%2C274458%2C274459%2C274460%2C274461%2C274462%2C282668%5D"
+    },
+     {
+      id: 13,
+      title: "Grade 10 JEE/NEET Foundation 2026",
+      instructor: "Dr. Lisa Wang",
+      instructorTitle: "Principal Data Scientist at Microsoft",
+      category: "jee/neet",
+      price: 12499,
+      originalPrice: 20019,
+      rating: 4.9,
+      students: 9876,
+      duration: "78 hours",
+      lessons: 234,
+      level: "Advanced",
+      image: "https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2F839cfb63-9245-46b1-bd5c-134a76d612be.png&w=640&q=75",
+      gradient: "from-emerald-600 via-green-600 to-teal-600",
+      bgGradient: "from-emerald-50 to-green-50",
+      badge: "Hot",
+      description: "Master cutting-edge AI technologies and build intelligent systems that solve real-world problems.",
+      link:"https://www.klc.live/courses/622893?mainCategory=0&subCatList=%5B274457%2C274458%2C274459%2C274460%2C274461%2C274462%2C282668%5D"
+    },
+     {
+      id: 14,
+      title: "Aspire CBSE 2027 2 Year Batch",
+      instructor: "Dr. Lisa Wang",
+      instructorTitle: "Principal Data Scientist at Microsoft",
+      category: "cbse",
+      price: 14999,
+      originalPrice: 25019,
+      rating: 4.9,
+      students: 9876,
+      duration: "78 hours",
+      lessons: 234,
+      level: "Advanced",
+      image: "https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2Fbabb15dd-3846-41a4-a8a7-b8cabd2e52bf.png&w=640&q=75",
+      gradient: "from-emerald-600 via-green-600 to-teal-600",
+      bgGradient: "from-emerald-50 to-green-50",
+      badge: "Hot",
+      description: "Master cutting-edge AI technologies and build intelligent systems that solve real-world problems.",
+      link:"https://www.klc.live/courses/622891?filterId=33&sortId=7"
+    },{
+      id: 15,
+      title: "NEET Sprint 2026 - 1 Year Program",
+      instructor: "Dr. Lisa Wang",
+      instructorTitle: "Principal Data Scientist at Microsoft",
+      category: "neet",
+      price: 14999,
+      originalPrice: 25019,
+      rating: 4.9,
+      students: 9876,
+      duration: "78 hours",
+      lessons: 234,
+      level: "Advanced",
+      image: "https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2Fb15b3f76-f703-4f45-9bf4-f05bb6117ef4.jpg&w=640&q=75",
+      gradient: "from-emerald-600 via-green-600 to-teal-600",
+      bgGradient: "from-emerald-50 to-green-50",
+      badge: "Hot",
+      description: "Master cutting-edge AI technologies and build intelligent systems that solve real-world problems.",
+      link:"https://www.klc.live/courses/639270?mainCategory=0&filterId=1&sortId=7"
+    },
+    {
+      id: 16,
+      title: "NEET TITANS TEST SERIES 2025 - Your Ultimate NEET Prep Partner!",
+      instructor: "Dr. Lisa Wang",
+      instructorTitle: "Principal Data Scientist at Microsoft",
+      category: "neet",
+      price: 1999,
+      originalPrice: 5019,
+      rating: 4.9,
+      students: 9876,
+      duration: "78 hours",
+      lessons: 234,
+      level: "Advanced",
+      image: "https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2F06c7d657-2fe1-4f5b-857f-e8e7664bf202.png&w=640&q=75",
+      gradient: "from-emerald-600 via-green-600 to-teal-600",
+      bgGradient: "from-emerald-50 to-green-50",
+      badge: "Hot",
+      description: "Master cutting-edge AI technologies and build intelligent systems that solve real-world problems.",
+      link:"https://www.klc.live/courses/639194?mainCategory=0&filterId=1&sortId=7"
+    },
+        {
+      id: 17,
+      title: "CBSE Mastery 12 (2027) - PCM/B",
+      instructor: "Dr. Lisa Wang",
+      instructorTitle: "Principal Data Scientist at Microsoft",
+      category: "cbse",
+      price: 14999,
+      originalPrice: 25019,
+      rating: 4.9,
+      students: 9876,
+      duration: "78 hours",
+      lessons: 234,
+      level: "Advanced",
+      image: "https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2Ff4326741-ced2-4128-8250-f576dd3a6fed.jpg&w=640&q=75",
+      gradient: "from-emerald-600 via-green-600 to-teal-600",
+      bgGradient: "from-emerald-50 to-green-50",
+      badge: "Hot",
+      description: "Master cutting-edge AI technologies and build intelligent systems that solve real-world problems.",
+      link:"https://www.klc.live/courses/638897?mainCategory=0&filterId=1&sortId=7"
+    },
+     {
+      id: 18,
+      title: "CBSE Excel 12 (2026) - PCM/B",
+      instructor: "Dr. Lisa Wang",
+      instructorTitle: "Principal Data Scientist at Microsoft",
+      category: "cbse",
+      price: 12999,
+      originalPrice: 20019,
+      rating: 4.9,
+      students: 9876,
+      duration: "78 hours",
+      lessons: 234,
+      level: "Advanced",
+      image: "https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2Ff4326741-ced2-4128-8250-f576dd3a6fed.jpg&w=640&q=75",
+      gradient: "from-emerald-600 via-green-600 to-teal-600",
+      bgGradient: "from-emerald-50 to-green-50",
+      badge: "Hot",
+      description: "Master cutting-edge AI technologies and build intelligent systems that solve real-world problems.",
+      link:"https://www.klc.live/courses/638897?mainCategory=0&filterId=1&sortId=7"
     }
   ];
 
@@ -203,7 +443,7 @@ const CoursesPage = () => {
       </div>
 
       {/* Category Filter */}
-      <div className="bg-white/80 backdrop-blur-xl border-b border-slate-200/50 sticky top-0 z-40 shadow-sm">
+      <div className="bg-white/80 backdrop-blur-xl border-b border-slate-200/50 sticy top-0 z-40 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 py-6">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-3">
@@ -221,7 +461,7 @@ const CoursesPage = () => {
               </span>
             </div>
           </div>
-          <div className="flex flex-wrap gap-3">
+          <div className="flex  flex-wrap gap-4 justify-center">
             {categories.map((category) => (
               <button
                 key={category.id}
@@ -314,9 +554,9 @@ const CoursesPage = () => {
                 </h3>
                 
                 {/* Description */}
-                <p className="text-slate-600 text-sm mb-5 leading-relaxed">
+                {/* <p className="text-slate-600 text-sm mb-5 leading-relaxed">
                   {course.description}
-                </p>
+                </p> */}
 
                 {/* Course Details */}
                 <div className="flex items-center gap-4 mb-5 text-sm">
