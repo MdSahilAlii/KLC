@@ -10,10 +10,7 @@ const poppins = Poppins({
   variable: '--font-poppins',
 });
 
-export const metadata = {
-  title: 'Your App',
-  description: 'Courses Page',
-};
+
 
 
 

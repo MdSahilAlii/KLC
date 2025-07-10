@@ -89,7 +89,7 @@ const Navbar = () => {
                   ? 'https://www.klc.live/courses?filterId=28&sortId=11'
                   : item === 'Practice'
                   ? 'https://www.klc.live/freetest'
-                  : 'https://www.klc.live/about-us'
+                  : '/about-us'
               }
               className="text-black font-medium hover:text-blue-600 relative group"
               whileHover={{ scale: 1.05 }}
@@ -187,7 +187,7 @@ const Navbar = () => {
                       ? 'https://www.klc.live/courses?filterId=28&sortId=11'
                       : item === 'Practice'
                       ? 'https://www.klc.live/freetest'
-                      : 'https://www.klc.live/about-us'
+                      : '/about-us'
                   }
                   className="block text-gray-800 font-medium hover:text-blue-600 transition"
                 >
