@@ -74,7 +74,7 @@ const Hero = () => {
                     viewport={{ once: true, amount: 0.5 }}
                 >
                     <img
-                        src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                        src="https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2F75a54457-aec6-4e35-8516-3dd604ea3278.png&w=640&q=75"
                         alt="Student Learning"
                         className="rounded-3xl shadow-2xl max-w-md w-full object-cover hover:scale-105 transition-transform duration-300 border-4 border-white/20"
                     />

@@ -26,7 +26,7 @@ const Navbar = () => {
       transition={{ type: 'spring', stiffness: 80 }}
       className="bg-white/70 backdrop-blur-lg shadow-xl sticky top-0 z-50 border-b border-white/30 font-poppins"
     >
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div className="container mx-auto px-4 py-4 flex justify-between items-center ">
         {/* Logo */}
         <motion.a
           href="#"

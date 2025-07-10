@@ -170,7 +170,7 @@ const CoursesPage = () => {
       students: 9876,
       duration: "78 hours",
       lessons: 234,
-      level: "Advanced",
+      level: "Trending",
       image: "https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2F1e554b6f-9c7b-4122-a2d4-839a005155ac.png&w=640&q=75",
       gradient: "from-emerald-600 via-green-600 to-teal-600",
       bgGradient: "from-emerald-50 to-green-50",
@@ -190,7 +190,7 @@ const CoursesPage = () => {
       students: 9876,
       duration: "78 hours",
       lessons: 234,
-      level: "Advanced",
+      level: "Bestseller",
       image: "https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2F72706ece-4ed2-46cc-bbe8-4a943389cf37.png&w=640&q=75",
       gradient: "from-emerald-600 via-green-600 to-teal-600",
       bgGradient: "from-emerald-50 to-green-50",
@@ -234,7 +234,7 @@ const CoursesPage = () => {
       image: "https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2F4535e7de-5601-462e-84e4-a45509f2cd95.png&w=640&q=75",
       gradient: "from-emerald-600 via-green-600 to-teal-600",
       bgGradient: "from-emerald-50 to-green-50",
-      badge: "Hot",
+      badge: "Premium",
       description: "Master cutting-edge AI technologies and build intelligent systems that solve real-world problems.",
       link:"https://www.klc.live/courses/623132?mainCategory=0"
     },
@@ -274,7 +274,7 @@ const CoursesPage = () => {
       image: "https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2F839cfb63-9245-46b1-bd5c-134a76d612be.png&w=640&q=75",
       gradient: "from-emerald-600 via-green-600 to-teal-600",
       bgGradient: "from-emerald-50 to-green-50",
-      badge: "Hot",
+      badge: "Best Seller",
       description: "Master cutting-edge AI technologies and build intelligent systems that solve real-world problems.",
       link:"https://www.klc.live/courses/622893?mainCategory=0&subCatList=%5B274457%2C274458%2C274459%2C274460%2C274461%2C274462%2C282668%5D"
     },
@@ -306,14 +306,14 @@ const CoursesPage = () => {
       price: 14999,
       originalPrice: 25019,
       rating: 4.9,
-      students: 9876,
+      students: 7856,
       duration: "78 hours",
       lessons: 234,
       level: "Advanced",
       image: "https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2Fb15b3f76-f703-4f45-9bf4-f05bb6117ef4.jpg&w=640&q=75",
       gradient: "from-emerald-600 via-green-600 to-teal-600",
       bgGradient: "from-emerald-50 to-green-50",
-      badge: "Hot",
+      badge: "Trending",
       description: "Master cutting-edge AI technologies and build intelligent systems that solve real-world problems.",
       link:"https://www.klc.live/courses/639270?mainCategory=0&filterId=1&sortId=7"
     },
@@ -326,7 +326,7 @@ const CoursesPage = () => {
       price: 1999,
       originalPrice: 5019,
       rating: 4.9,
-      students: 9876,
+      students: 9776,
       duration: "78 hours",
       lessons: 234,
       level: "Advanced",
@@ -349,7 +349,7 @@ const CoursesPage = () => {
       students: 9876,
       duration: "78 hours",
       lessons: 234,
-      level: "Advanced",
+      level: "Trending",
       image: "https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2Ff4326741-ced2-4128-8250-f576dd3a6fed.jpg&w=640&q=75",
       gradient: "from-emerald-600 via-green-600 to-teal-600",
       bgGradient: "from-emerald-50 to-green-50",
@@ -366,16 +366,36 @@ const CoursesPage = () => {
       price: 12999,
       originalPrice: 20019,
       rating: 4.9,
-      students: 9876,
+      students: 7876,
       duration: "78 hours",
       lessons: 234,
       level: "Advanced",
       image: "https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2Ff4326741-ced2-4128-8250-f576dd3a6fed.jpg&w=640&q=75",
       gradient: "from-emerald-600 via-green-600 to-teal-600",
       bgGradient: "from-emerald-50 to-green-50",
-      badge: "Hot",
+      badge: "Best Seller",
       description: "Master cutting-edge AI technologies and build intelligent systems that solve real-world problems.",
       link:"https://www.klc.live/courses/638897?mainCategory=0&filterId=1&sortId=7"
+    },
+     {
+      id: 19,
+      title: "Course Transfer",
+      instructor: "Dr. Lisa Wang",
+      instructorTitle: "Principal Data Scientist at Microsoft",
+      category: "",
+      price: 123,
+      originalPrice: 500,
+      rating: 4.9,
+      students: 976,
+      duration: "78 hours",
+      lessons: 234,
+      level: "Advanced",
+      image: "https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fali-cdn-cp-assets-public.classplus.co%2Fcams%2Fcards-icon%2Fdefault_course.png&w=640&q=75",
+      gradient: "from-emerald-600 via-green-600 to-teal-600",
+      bgGradient: "from-emerald-50 to-green-50",
+      badge: "Hot",
+      description: "Master cutting-edge AI technologies and build intelligent systems that solve real-world problems.",
+      link:"https://www.klc.live/courses/696872?category=neet"
     }
   ];
 
@@ -483,8 +503,8 @@ const CoursesPage = () => {
       </div>
 
       {/* Courses Grid */}
-      <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="max-w-7xl mx-auto px-6 py-16 ">
+        <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-10  gap-y-15">
           {filteredCourses.map((course) => (
             <div
               key={course.id}
@@ -549,7 +569,7 @@ const CoursesPage = () => {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl font-bold text-slate-900 mb-3 leading-tight group-hover:bg-gradient-to-r group-hover:from-indigo-600 group-hover:to-purple-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
+                <h3 className="text-l font-bold text-slate-900 mb-3 leading-tight group-hover:bg-gradient-to-r group-hover:from-indigo-600 group-hover:to-purple-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
                   {course.title}
                 </h3>
                 
