@@ -40,7 +40,7 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-8 items-center relative">
           {/* Courses Dropdown on Hover */}
           <div className="relative group">
-            <div className="flex items-center space-x-1 cursor-pointer text-gray-700 font-medium hover:text-blue-600">
+            <div className="flex items-center space-x-1 cursor-pointer text-black font-medium hover:text-blue-600">
               <span>Courses</span>
               <svg
                 className="w-3 h-3 transform transition-transform duration-200 group-hover:rotate-180"
@@ -61,19 +61,19 @@ const Navbar = () => {
             <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
               <a
                 href="https://www.klc.live/courses?category=neet"
-                className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
+                className="block px-4 py-2 text-black hover:bg-blue-100"
               >
                 NEET
               </a>
               <a
                 href="https://www.klc.live/courses?category=jee"
-                className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
+                className="block px-4 py-2 text-black hover:bg-blue-100"
               >
                 JEE
               </a>
               <a
                 href="https://www.klc.live/courses?category=foundation"
-                className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
+                className="block px-4 py-2 text-black hover:bg-blue-100"
               >
                 Foundation
               </a>
@@ -91,7 +91,7 @@ const Navbar = () => {
                   ? 'https://www.klc.live/freetest'
                   : 'https://www.klc.live/about-us'
               }
-              className="text-gray-700 font-medium hover:text-blue-600 relative group"
+              className="text-black font-medium hover:text-blue-600 relative group"
               whileHover={{ scale: 1.05 }}
             >
               {item}
