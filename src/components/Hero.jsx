@@ -11,7 +11,7 @@ const Hero = () => {
     };
 
     return (
-        <section className="relative min-h-[90vh] bg-gradient-to-br from-[#0f2027] via-[#203a43] to-[#2c5364] text-white overflow-hidden flex items-center justify-center px-6">
+        <section className="relative min-h-[90vh] bg-gradient-to-br from-slate-900 via-purple-900 text-white overflow-hidden flex items-center justify-center px-6">
             {/* Blurred Background Shapes */}
             <div className="absolute w-[300px] h-[300px] bg-purple-600 rounded-full opacity-30 blur-3xl top-10 left-[-100px] z-0"></div>
             <div className="absolute w-[400px] h-[400px] bg-yellow-400 rounded-full opacity-20 blur-2xl bottom-10 right-[-150px] z-0"></div>
