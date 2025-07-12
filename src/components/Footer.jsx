@@ -12,8 +12,7 @@ import {
   FaPhone,
   FaEnvelope,
   FaMapMarkerAlt,
-  FaArrowUp
-} from 'react-icons/fa';
+  FaArrowUp} from 'react-icons/fa';
 
 const footerVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -82,11 +81,11 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: FaFacebookF, color: 'hover:bg-blue-600', href: '#' },
-    { icon: FaTwitter, color: 'hover:bg-sky-500', href: '#' },
-    { icon: FaInstagram, color: 'hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500', href: '#' },
+    { icon: FaFacebookF, color: 'hover:bg-blue-600', href: 'https://www.facebook.com/kalamlearningcenter?mibextid=wwXIfr&rdid=zosOKVjfhKl878MA&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1DLvjUGxEf%2F%3Fmibextid%3DwwXIfr#' },
+    { icon: FaTwitter, color: 'hover:bg-sky-500', href: 'https://x.com/klcindia' },
+    { icon: FaInstagram, color: 'hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500', href: 'https://www.instagram.com/klc.live/#' },
     { icon: FaLinkedinIn, color: 'hover:bg-blue-700', href: '#' },
-    { icon: FaYoutube, color: 'hover:bg-red-600', href: '#' }
+    { icon: FaYoutube, color: 'hover:bg-red-600', href: 'https://www.youtube.com/@kalamlearning' }
   ];
 
   const scrollToTop = () => {

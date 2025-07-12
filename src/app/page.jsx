@@ -8,6 +8,7 @@ import Image from "next/image";
 import LocomotiveScrollProvider from "@/components/LocomotiveScrollProvider";
 import HeroBanner from "@/components/HeroBanner";
 import HeroC from "@/components/HeroC";
+import Header from "@/components/Header";
 
 
 
@@ -18,6 +19,8 @@ export default function Home() {
    <div>
     <LocomotiveScrollProvider>
     <Navbar/>
+    {/* <Header/> */}
+
    {/* <Hero/> */}
     <HeroBanner/>
     {/* <HeroC/> */}
