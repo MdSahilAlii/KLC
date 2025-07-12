@@ -8,7 +8,7 @@ const courses = [
     title: "NEET Pinnacle 2027 - 2 Year Program",
     description:
       "A 2-year intensive program for NEET aspirants with expert faculty and comprehensive study material.",
-    price: "₹15,999",
+    price: "₹19,999",
     originalPrice: "₹30,019",
     rating: 4.8,
     reviews: 1245,
@@ -38,7 +38,7 @@ const courses = [
     reviews: 1520,
     image:
       "https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2F88de103d-0f6c-47eb-8bea-aea79d743e65.jpg&w=640&q=75",
-    link: "https://www.klc.live/courses/cbse-class-12/638895?mainCategory=16"
+    link: "https://www.klc.live/courses/639269?mainCategory=8"
   },
 ];
 
