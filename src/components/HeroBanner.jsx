@@ -149,7 +149,7 @@ const HeroBanner = () => {
                       <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       <div className="relative flex items-center justify-center">
                         <RocketIcon />
-                        <span className="ml-2">Start Free Trial</span>
+                        <a href='https://www.klc.live/contact-us'  className="ml-2">Start Free Trial</a>
                       </div>
                     </motion.button>
 
@@ -160,7 +160,7 @@ const HeroBanner = () => {
                     >
                       <div className="flex items-center justify-center">
                         <BookIcon />
-                        <span className="ml-2">Explore Courses</span>
+                        <a href='/courses' className="ml-2">Explore Courses</a>
                       </div>
                     </motion.button>
                   </div>
