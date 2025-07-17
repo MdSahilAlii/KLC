@@ -14,7 +14,7 @@ const slides = [
     heading: 'Master Maths and Science with',
     highlight: 'Top Educators',
     description: 'Live doubt-solving, concept clarity, and progress tracking with expert teachers.',
-    image: 'https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2F993f5177-df21-412b-b469-e8a94094cd66.jpg&w=640&q=75',
+    image: 'https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2F88de103d-0f6c-47eb-8bea-aea79d743e65.jpg&w=640&q=75',
     stats: { students: '50k+', rating: '4.8', courses: '200+' }
   },
   {

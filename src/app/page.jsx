@@ -9,6 +9,7 @@ import LocomotiveScrollProvider from "@/components/LocomotiveScrollProvider";
 import HeroBanner from "@/components/HeroBanner";
 import HeroC from "@/components/HeroC";
 import Header from "@/components/Header";
+import CombinedNavbarHero from "@/components/CombinedNavbarHero";
 
 
 
@@ -20,7 +21,7 @@ export default function Home() {
     <LocomotiveScrollProvider>
     <Navbar/>
     {/* <Header/> */}
-
+    {/* <CombinedNavbarHero/> */}
    {/* <Hero/> */}
     <HeroBanner/>
     {/* <HeroC/> */}

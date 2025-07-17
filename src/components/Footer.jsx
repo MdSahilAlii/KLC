@@ -161,7 +161,7 @@ const Footer = () => {
             <div className="space-y-4 mb-8">
               <div className="flex items-center gap-3 text-gray-400">
                 <FaPhone className="text-cyan-400" />
-                <span>+91 98765 43210</span>
+                <span>+91 9335004071 (Whatsapp chat only )</span>
               </div>
               <div className="flex items-center gap-3 text-gray-400">
                 <FaEnvelope className="text-cyan-400" />
@@ -169,7 +169,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3 text-gray-400">
                 <FaMapMarkerAlt className="text-cyan-400" />
-                <span>Lucknow, India</span>
+                <span>Mull Building, 4, Ashok Marg, Hazratganj, Lucknow, Uttar Pradesh 226001.</span>
               </div>
             </div>
 

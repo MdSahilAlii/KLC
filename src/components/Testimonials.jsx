@@ -4,25 +4,25 @@ import { motion } from 'framer-motion';
 
 const testimonials = [
   {
-    name: 'Leslie Alexander',
-    role: 'Freelance React Developer',
+    name: 'Maryam',
+    role: 'CBSE Class 12',
     image: 'https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-1.png',
     text:
-      '“You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.”',
+      '“At KLC, my teachers are very kind and always ready to help. They teach us not only to study hard but also to be a good person. I feel proud when I do well in my exams.”',
   },
   {
-    name: 'Jacob Jones',
-    role: 'Digital Marketer',
+    name: 'Zaid',
+    role: 'JEE 2026',
     image: 'https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-2.png',
     text:
-      '“Simply the best. Better than all the rest. I’d recommend this product to beginners and advanced users.”',
+      '“At KLC, I felt supported every step of the way. The focus on both academics and personal growth gave me the confidence to excel in my exams and beyond. It\'s not just a coaching centre; it\'s a life changing experience.”',
   },
   {
-    name: 'Jenny Wilson',
-    role: 'Graphic Designer',
+    name: 'Saman Raza',
+    role: 'NEET 2026',
     image: 'https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-female.png',
     text:
-      '“I cannot believe that I have got a brand new landing page after getting Omega. It was super easy to edit and publish.”',
+      '“At KLC, I felt supported every step of the way. The focus on both academics and personal growth gave me the confidence to excel in my exams and beyond. It\'s not just a coaching centre; it\'s a life changing experience.”',
   },
 ];
 

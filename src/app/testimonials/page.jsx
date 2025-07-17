@@ -250,7 +250,7 @@ const TestimonialsPage = () => {
                           <Quote className="w-20 h-20 text-white/30 mx-auto mb-6" />
                           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-20 h-20 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-xl"></div>
                         </div>
-                        <p className="text-2xl lg:text-3xl text-white leading-relaxed mb-8 italic font-light">
+                        <p className="text-xl lg:text-xl text-white leading-relaxed mb-8 italic font-light">
                           "{testimonial.text}"
                         </p>
                       </div>

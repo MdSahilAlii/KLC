@@ -26,6 +26,12 @@ const teachers = [
         subject: "Biology",
         experience: "8+ years • AIIMS Delhi",
         image: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&w=1470&q=80"
+    },,
+    {
+        name: "Dr. Amit Patel",
+        subject: "Biology",
+        experience: "8+ years • AIIMS Delhi",
+        image: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&w=1470&q=80"
     }
 ];
 
