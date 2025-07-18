@@ -427,7 +427,7 @@ const CoursesPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-indigo-50/30">
       {/* Header */}
-      <div className="relative overflow-hidden bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-800">
+      <div className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
         <div className="absolute inset-0 bg-gradient-to-r from-indigo-900/10 via-purple-900/10 to-pink-800/10 opacity-40"></div>
         <div className="relative max-w-7xl mx-auto px-6 py-20">
           <div className="text-center">
@@ -628,30 +628,7 @@ const CoursesPage = () => {
       </div>
 
       {/* Call to Action */}
-      <div className="relative bg-gradient-to-br from-slate-900 via-indigo-900 to-purple-900 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/10 via-indigo-900/10 to-purple-900/10 opacity-40"></div>
-        <div className="relative max-w-6xl mx-auto px-6 py-20 text-center">
-          <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-12 border border-white/10">
-            <h2 className="text-5xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent">
-                Ready to Level Up?
-              </span>
-            </h2>
-            <p className="text-xl text-indigo-100 max-w-3xl mx-auto mb-10 leading-relaxed">
-              Join the elite community of learners who are transforming their careers with cutting-edge skills. 
-              Your future self will thank you.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 text-white px-10 py-4 rounded-2xl font-bold text-lg hover:shadow-2xl hover:shadow-purple-500/25 transition-all duration-300 transform hover:scale-105">
-                Explore All Courses
-              </button>
-              <button className="border-2 border-white/30 text-white px-10 py-4 rounded-2xl font-bold text-lg hover:bg-white/10 hover:border-white/50 transition-all duration-300 backdrop-blur-sm">
-                Talk to Expert
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      
     </div>
   );
 };

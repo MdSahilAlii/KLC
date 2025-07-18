@@ -29,11 +29,11 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center ">
         {/* Logo */}
         <motion.a
-          href="#"
+          href="/"
           whileHover={{ scale: 1.05 }}
           className="text-2xl font-extrabold text-blue-700 tracking-wide"
         >
-          <img src="klc.jpg" alt="KLC Logo" className="h-10" />
+          <img src="klc.png" alt="KLC Logo" className="h-10" />
         </motion.a>
 
         {/* Desktop Links */}
@@ -60,19 +60,19 @@ const Navbar = () => {
 
             <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
               <a
-                href="https://www.klc.live/courses?category=neet"
+                href="/courses?category=neet"
                 className="block px-4 py-2 text-black hover:bg-blue-100"
               >
                 NEET
               </a>
               <a
-                href="https://www.klc.live/courses?category=jee"
+                href="/courses?category=jee"
                 className="block px-4 py-2 text-black hover:bg-blue-100"
               >
                 JEE
               </a>
               <a
-                href="https://www.klc.live/courses?category=foundation"
+                href="/courses?category=foundation"
                 className="block px-4 py-2 text-black hover:bg-blue-100"
               >
                 Foundation

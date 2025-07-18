@@ -19,7 +19,7 @@ export default function Home() {
      
    <div>
     <LocomotiveScrollProvider>
-    <Navbar/>
+    {/* <Navbar/> */}
     {/* <Header/> */}
     {/* <CombinedNavbarHero/> */}
    {/* <Hero/> */}
@@ -28,6 +28,7 @@ export default function Home() {
     <Courses/>
     <Teachers/>
     <Testimonials/>
+    {/* <Foot/> */}
     <Footer/>
     </LocomotiveScrollProvider>
    </div>
