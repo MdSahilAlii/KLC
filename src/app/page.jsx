@@ -18,7 +18,7 @@ export default function Home() {
   return (
      
    <div>
-    <LocomotiveScrollProvider>
+    {/* <LocomotiveScrollProvider> */}
     {/* <Navbar/> */}
     {/* <Header/> */}
     {/* <CombinedNavbarHero/> */}
@@ -29,8 +29,8 @@ export default function Home() {
     <Teachers/>
     <Testimonials/>
     {/* <Foot/> */}
-    <Footer/>
-    </LocomotiveScrollProvider>
+    {/* <Footer/> */}
+    {/* </LocomotiveScrollProvider> */}
    </div>
    
   );

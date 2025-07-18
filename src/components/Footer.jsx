@@ -52,7 +52,7 @@ const Footer = () => {
         { name: 'JEE Main & Advanced', popular: true },
         { name: 'NEET UG Preparation', popular: true },
         { name: 'CBSE Class 12', popular: false },
-        { name: 'ICSE Preparation', popular: false },
+        // { name: 'ICSE Preparation', popular: false },
         { name: 'Foundation Courses', popular: false }
       ]
     },
@@ -161,7 +161,7 @@ const Footer = () => {
             <div className="space-y-4 mb-8">
               <div className="flex items-center gap-3 text-gray-400">
                 <FaPhone className="text-cyan-400" />
-                <span>+91 9335004071 (Whatsapp chat only )</span>
+                <span>+91 9335004071</span>
               </div>
               <div className="flex items-center gap-3 text-gray-400">
                 <FaEnvelope className="text-cyan-400" />
