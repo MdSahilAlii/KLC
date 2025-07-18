@@ -16,13 +16,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={poppins.variable}>
       <body>
-        <LocomotiveScrollProvider>
+        {/* <LocomotiveScrollProvider> */}
           <main data-scroll-container>
             <Navbar />
             {children}
             <Footer />
           </main>
-        </LocomotiveScrollProvider>
+        {/* </LocomotiveScrollProvider> */}
       </body>
     </html>
   );
