@@ -101,8 +101,8 @@ const AboutUs = () => {
         <div className="relative pt-32 pb-40 px-6">
           <div className="max-w-7xl mx-auto">
             <div className={`text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-white/10 backdrop-blur-lg rounded-full mb-8 border border-white/20">
-                <Sparkles className="w-10 h-10 text-white" />
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-whi/10 backdrop-blur-lg rounded-full mb-8 boder border-whit/20">
+                <img src="k.png" width="90" alt="" />
               </div>
               <h1 className="text-6xl md:text-8xl font-bold mb-6 text-white leading-tight">
                 Kalam Learning
@@ -356,10 +356,10 @@ const AboutUs = () => {
           <p className="text-xl text-blue-100 mb-12 max-w-3xl mx-auto">
             Join our community of successful students and experience the difference that quality education and personalized guidance can make in your academic journey.
           </p>
-          <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-10 py-5 rounded-2xl text-lg font-semibold transition-all duration-300 inline-flex items-center shadow-2xl hover:shadow-3xl hover:scale-105">
+          <a href='/' className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-10 py-5 rounded-2xl text-lg font-semibold transition-all duration-300 inline-flex items-center shadow-2xl hover:shadow-3xl hover:scale-105">
             Start Your Journey Today
             <ArrowRight className="w-6 h-6 ml-3" />
-          </button>
+          </a>
         </div>
       </div>
     </div>

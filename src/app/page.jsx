@@ -18,19 +18,22 @@ export default function Home() {
   return (
      
    <div>
-    {/* <LocomotiveScrollProvider> */}
+    
     {/* <Navbar/> */}
     {/* <Header/> */}
     {/* <CombinedNavbarHero/> */}
    {/* <Hero/> */}
+   {/* <LocomotiveScrollProvider> */}
     <HeroBanner/>
     {/* <HeroC/> */}
     <Courses/>
     <Teachers/>
     <Testimonials/>
-    {/* <Foot/> */}
     {/* <Footer/> */}
-    {/* </LocomotiveScrollProvider> */}
+   
+     {/* </LocomotiveScrollProvider> */}
+    {/* <Foot/> */}
+    
    </div>
    
   );

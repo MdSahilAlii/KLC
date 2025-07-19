@@ -1,5 +1,6 @@
 'use client';
 
+
 import React, { useState } from 'react';
 import { Clock, Users, Star, BookOpen, Award, Play, ChevronRight, Filter, Zap } from 'lucide-react';
 
