@@ -153,7 +153,7 @@ const TestimonialsPage = () => {
       />
 
       {/* Header */}
-      <header className="relative z-10 bg-black/20 backdrop-blur-lg border-b border-white/10">
+      {/* <header className="relative z-10 bg-black/20 backdrop-blur-lg border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
@@ -177,10 +177,10 @@ const TestimonialsPage = () => {
             </div>
           </div>
         </div>
-      </header>
+      </header> */}
 
       {/* Hero Section */}
-      <section className="relative py-24 overflow-hidden">
+      <section className="relative py-12 overflow-hidden">
         <div className="relative max-w-7xl mx-auto px-4 text-center">
           <div className={`transition-all duration-1000 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
@@ -227,7 +227,7 @@ const TestimonialsPage = () => {
       </section>
 
       {/* Main Testimonials Carousel */}
-      <section className="py-24 relative">
+      <section className="py-10 relative">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
             <h3 className="text-5xl font-bold text-white mb-6">What Our Students Say</h3>
@@ -366,7 +366,7 @@ const TestimonialsPage = () => {
 
       {/* CTA Section */}
       <section className="py-24 relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 backdrop-blur-sm"></div>
+        <div className="absolute inset-0 backdrop-blur-sm"></div>
         <div className="relative max-w-4xl mx-auto px-4 text-center">
           <div className="bg-black/40 backdrop-blur-xl rounded-3xl p-12 border border-white/10 shadow-2xl">
             <h3 className="text-5xl font-bold text-white mb-6">Ready to Join Our Success Story?</h3>
@@ -374,33 +374,22 @@ const TestimonialsPage = () => {
               Start your journey towards academic excellence with personalized coaching and expert guidance
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full font-semibold hover:from-blue-600 hover:to-purple-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
+              <a href='/' className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full font-semibold hover:from-blue-600 hover:to-purple-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
                 <span className="flex items-center gap-2">
                   <Sparkles className="w-5 h-5" />
                   Enroll Now
                 </span>
-              </button>
-              <button className="px-8 py-4 border-2 border-white/30 text-white rounded-full font-semibold hover:bg-white/10 transition-all duration-300 backdrop-blur-sm">
+              </a>
+              <a href='https://login.klc.live/login?orgCode=tgbukb' className="px-8 py-4 border-2 border-white/30 text-white rounded-full font-semibold hover:bg-white/10 transition-all duration-300 backdrop-blur-sm">
                 Schedule a Demo
-              </button>
+              </a>
             </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-black/60 backdrop-blur-xl border-t border-white/10 py-12">
-        <div className="max-w-7xl mx-auto px-4 text-center">
-          <div className="flex items-center justify-center space-x-4 mb-6">
-            <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl flex items-center justify-center shadow-lg">
-              <BookOpen className="w-7 h-7 text-white" />
-            </div>
-            <h4 className="text-2xl font-bold text-white">Kalam Learning Centre</h4>
-          </div>
-          <p className="text-gray-300 mb-4">Empowering students to achieve their dreams through quality education</p>
-          <p className="text-gray-500 text-sm">© 2024 Kalam Learning Centre. All rights reserved.</p>
-        </div>
-      </footer>
+      
     </div>
   );
 };
