@@ -337,7 +337,7 @@ const AboutUs = () => {
                   We are committed to providing an educational environment that fosters intellectual growth, critical thinking, and personal development. Our approach goes beyond academics to character building and holistic development.
                 </p>
                 <div className="flex items-center text-blue-400 font-semibold text-lg group cursor-pointer">
-                  <span className="group-hover:text-blue-300 transition-colors duration-300">Discover Our Programs</span>
+                  <a href='/' className="group-hover:text-blue-300 transition-colors duration-300">Discover Our Programs</a>
                   <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform duration-300" />
                 </div>
               </div>
