@@ -349,9 +349,9 @@ const AboutUs = () => {
       {/* CTA Section */}
       <div className="py-24 bg-gradient-to-br from-indigo-900 via-purple-900 to-blue-900 text-white px-6">
         <div className="max-w-5xl mx-auto text-center">
-          <div className="inline-flex items-center justify-center w-20 h-20 bg-white/10 backdrop-blur-lg rounded-full mb-8 border border-white/20">
+          <a href='/' className="inline-flex items-center justify-center w-20 h-20 bg-white/10 backdrop-blur-lg rounded-full mb-8 border border-white/20">
             <ArrowRight className="w-10 h-10 text-white" />
-          </div>
+          </a>
           <h2 className="text-5xl font-bold mb-6">Ready to Transform Your Future?</h2>
           <p className="text-xl text-blue-100 mb-12 max-w-3xl mx-auto">
             Join our community of successful students and experience the difference that quality education and personalized guidance can make in your academic journey.
