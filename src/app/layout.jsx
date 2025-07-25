@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
           <main data-scroll-container>
             <Navbar />
             {children}
-            <Footer />
+            {/* <Footer /> */}
           </main>
         {/* </LocomotiveScrollProvider> */}
       </body>

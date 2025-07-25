@@ -347,7 +347,7 @@ const AboutUs = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="py-24 bg-gradient-to-br from-slate-900 to-indigo-900 text-white px-6">
+      <div className="py-24 bg-gradient-to-br from-indigo-900 via-purple-900 to-blue-900 text-white px-6">
         <div className="max-w-5xl mx-auto text-center">
           <div className="inline-flex items-center justify-center w-20 h-20 bg-white/10 backdrop-blur-lg rounded-full mb-8 border border-white/20">
             <ArrowRight className="w-10 h-10 text-white" />
@@ -356,13 +356,14 @@ const AboutUs = () => {
           <p className="text-xl text-blue-100 mb-12 max-w-3xl mx-auto">
             Join our community of successful students and experience the difference that quality education and personalized guidance can make in your academic journey.
           </p>
-          <a href='/' className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-10 py-5 rounded-2xl text-lg font-semibold transition-all duration-300 inline-flex items-center shadow-2xl hover:shadow-3xl hover:scale-105">
+          <a href='/courses' className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-10 py-5 rounded-2xl text-lg font-semibold transition-all duration-300 inline-flex items-center shadow-2xl hover:shadow-3xl hover:scale-105">
             Start Your Journey Today
             <ArrowRight className="w-6 h-6 ml-3" />
           </a>
         </div>
       </div>
     </div>
+    
   );
 };
 

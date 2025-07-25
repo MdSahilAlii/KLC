@@ -3,6 +3,7 @@
 
 import React, { useState } from 'react';
 import { Clock, Users, Star, BookOpen, Award, Play, ChevronRight, Filter, Zap } from 'lucide-react';
+import Footer from '@/components/Footer';
 
 const CoursesPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -629,6 +630,7 @@ const CoursesPage = () => {
       </div>
 
       {/* Call to Action */}
+      <Footer />
       
     </div>
   );

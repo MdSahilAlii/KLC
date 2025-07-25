@@ -29,7 +29,7 @@ export default function Home() {
     <Courses/>
     <Teachers/>
     <Testimonials/>
-    {/* <Footer/> */}
+    <Footer/>
    
      {/* </LocomotiveScrollProvider> */}
     {/* <Foot/> */}
