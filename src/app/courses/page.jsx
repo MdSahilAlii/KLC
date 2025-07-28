@@ -378,26 +378,6 @@ const CoursesPage = () => {
       badge: "Best Seller",
       description: "Master cutting-edge AI technologies and build intelligent systems that solve real-world problems.",
       link:"https://www.klc.live/courses/638897?mainCategory=0&filterId=1&sortId=7"
-    },
-     {
-      id: 19,
-      title: "Course Transfer",
-      instructor: "Dr. Lisa Wang",
-      instructorTitle: "Principal Data Scientist at Microsoft",
-      category: "",
-      price: 123,
-      originalPrice: 500,
-      rating: 4.9,
-      students: 976,
-      duration: "78 hours",
-      lessons: 234,
-      level: "Advanced",
-      image: "https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fali-cdn-cp-assets-public.classplus.co%2Fcams%2Fcards-icon%2Fdefault_course.png&w=640&q=75",
-      gradient: "from-emerald-600 via-green-600 to-teal-600",
-      bgGradient: "from-emerald-50 to-green-50",
-      badge: "Hot",
-      description: "Master cutting-edge AI technologies and build intelligent systems that solve real-world problems.",
-      link:"https://www.klc.live/courses/696872?category=neet"
     }
   ];
 
