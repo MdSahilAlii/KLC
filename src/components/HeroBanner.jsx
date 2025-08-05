@@ -18,7 +18,7 @@ const slides = [
     stats: { students: '50k+', rating: '4.8', courses: '200+' }
   },
   {
-    heading: 'Crack Olympiads and NTSE with',
+    heading: 'Crack JEE/NEET with',
     highlight: 'Focused Mentorship',
     description: 'Targeted preparation, personalized plans, and practice tests for competitive edge.',
     image: 'https://courses-assets-v2.classplus.co/_next/image?url=/api/proxyimage?url=https%3A%2F%2Fcdn-wl-assets.classplus.co%2Fproduction%2Fsingle%2Ftgbukb%2Fb15b3f76-f703-4f45-9bf4-f05bb6117ef4.jpg&w=640&q=75',
