@@ -206,7 +206,7 @@ const Footer = () => {
               <ul className="space-y-4">
                 {section.links.map((link, i) => (
                   <motion.li key={i} variants={linkHover} whileHover="hover">
-                    <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors duration-200 flex items-center gap-2">
+                    <a href="/courses" className="text-gray-400 hover:text-cyan-400 transition-colors duration-200 flex items-center gap-2">
                       {link.name}
                       {link.popular && (
                         <span className="px-2 py-1 text-xs bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full text-white font-semibold">
